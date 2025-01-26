@@ -1,0 +1,74 @@
+#snake {
+    height: 475px; 
+    width: 900px; 
+    overflow: hidden;
+    margin: 15px;
+}
+
+#draw, #dino {
+    width: 430px; 
+    height: 475px; 
+    overflow: hidden;
+    margin: 15px;
+}
+
+.bigContainer{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f49e9371-d784-4bbd-a6db-286fb2601e1e/di1983d-1d6f5f2d-1abd-46d7-95f5-f77d09eecad0.jpg/v1/fit/w_828,h_464,q_70,strp/_free_to_use_____desktop_background_by_redpandapawss_di1983d-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvZjQ5ZTkzNzEtZDc4NC00YmJkLWE2ZGItMjg2ZmIyNjAxZTFlXC9kaTE5ODNkLTFkNmY1ZjJkLTFhYmQtNDZkNy05NWY1LWY3N2QwOWVlY2FkMC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Et_nieFGY6--GQNzReiWXFa52sfSYFsJHoJW6t2OBgY);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+      display: grid;
+      grid-template-areas:
+        "menu menu menu"
+        "header a a"
+        "header todo calendar"
+        "header bottomSpace bottomSpace";
+      grid-template-columns: 4fr 15fr;
+      grid-template-rows: 3fr 20fr 15r 3fr;
+      grid-gap: 0px;
+      }
+
+.bigContainer > div.menu{
+    opacity: 1;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:darkblue;
+    grid-area: menu;
+}
+
+
+.menu a{
+    float: left;
+    font: arial;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.menu a:hover {
+    background-color: cornflowerblue;
+    font-size: 18px;
+  }   
+
+ body {
+    margin: 0px;
+ } 
+
+ .rubik {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+  }
+
+ .header {
+    background-color: rgb(253, 242, 211);
+    color: black;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 2.5rem;
+    padding-right: 40px;
+    grid-area: header;
+ }
