@@ -1,0 +1,137 @@
+.rubik {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+  }
+
+body {
+    background: lightblue;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+.bigContainer{
+  
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f49e9371-d784-4bbd-a6db-286fb2601e1e/dg20k9k-8dc7bcae-6820-456c-89c7-ef53a3be0666.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y0OWU5MzcxLWQ3ODQtNGJiZC1hNmRiLTI4NmZiMjYwMWUxZVwvZGcyMGs5ay04ZGM3YmNhZS02ODIwLTQ1NmMtODljNy1lZjUzYTNiZTA2NjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TRpP_NK2KxeBkphQTv0mF1qejdoF8uLQJ4Oku16_g1U);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+    display: grid;
+    grid-template-areas:
+      "menu menu"
+      "header header"
+      "todo calendar"
+      "bottomSpace bottomSpace";
+    grid-template-columns: 4fr 15fr;
+    grid-template-rows: 3fr 20fr 15r 3fr;
+    grid-gap: 15px;
+    }
+.bigContainer > div.todo{
+    border: 15px;
+    border-color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 10px;
+    grid-area: todo;
+    background-color: white;
+    opacity: 0.8;
+} 
+ 
+.bigContainer > div.menu{
+    opacity: 1;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:darkblue;
+    grid-area: menu;
+}
+
+.bigContainer > div.header{
+    font-family: Rubik;
+    margin-left: 15px;
+    grid-area: header;
+    color: white;
+}
+
+.menu a{
+    float: left;
+    font: arial;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.menu a:hover {
+    background-color: cornflowerblue;
+    font-size: 18px;
+  }
+
+
+.add{
+    border: none;
+    background-color: darkblue;
+    color: lightblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.add:hover{
+  background-color: lightblue;
+  color: darkblue;
+}
+
+
+.close {
+    float: right;
+  }
+  
+
+
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+
+li{
+    border-radius: 5px;
+    margin: 5px;
+    list-style-type: none;
+    background-color: cornflowerblue;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+#unorderedTodoList{
+  padding-inline-start: unset;
+}
+
+.bigContainer > div.calendar{
+  grid-area: calendar;
+  opacity: 0.8;
+} 
+
+#calenderFrame{
+  border-radius: 10px;
+  margin-inline-start: 100px;
+}
+
+#task{
+  width: 80%;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: darkblue;
+  opacity: 0.8;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}

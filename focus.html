@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Focus</title>
+        <link rel="stylesheet" href="./focus.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "bigContainer">
+            <div class = "menu">
+                <a href="index.html">Home</a>
+                <a href="bulletin.html">Bulletin Board</a>
+                <a href="focus.html">Focus</a>
+                <a href="relax.html">Relax</a>
+            </div>
+
+            <div class = "safeTimer" id="safeTimer">
+                <h2>Focus Timer</h2>
+                <input type="number" id="myInput" placeholder="How many minutes?">
+                <button id="button" onclick="begin()">Start</button>
+                <p id="safeTimerDisplay">25:00</p>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
